@@ -1,3 +1,14 @@
+# Getting report
+
+```npm install cypress -D```
+
+Run the tests :
+```npx cypress run --headless```
+A new json file entitle 'report.json' shall be created at the root of directory.
+
+If Ectopus WS is currently running (https://github.com/MacDaih/ectopus), you can then send the report to it with :
+```curl -i -X POST http://localhost:8000/new -H "Content-type: application/json" -d @report.json```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
